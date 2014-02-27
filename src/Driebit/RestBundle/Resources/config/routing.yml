@@ -1,0 +1,3 @@
+demos:
+    type: rest
+    resource: Driebit\RestBundle\Controller\DemosController

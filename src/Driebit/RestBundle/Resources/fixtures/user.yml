@@ -1,0 +1,7 @@
+Driebit\RestBundle\Entity\User:
+    driebit_demo:
+        username:   'driebit'
+        email:      'tech@driebit.nl'
+        enabled:    true
+        salt:       'inrwj0z1cu0w0gkwwwc4w4gsscscsok'
+        password:   '/7hlz+rVBdYGJaNmYY22vXkRb40K5VckARcevscM4mZtcRRtqFd6UA==' #tibierd

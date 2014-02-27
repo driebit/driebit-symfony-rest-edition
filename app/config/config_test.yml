@@ -1,0 +1,40 @@
+imports:
+    - { resource: config_dev.yml }
+    - { resource: parameters-test.yml }
+
+framework:
+    test: ~
+    session:
+        storage_id: session.storage.mock_file
+    profiler:
+        collect: false
+
+# WebProfiler Configuration
+web_profiler:
+    toolbar: false
+    intercept_redirects: false
+
+# Doctrine Configuration
+doctrine:
+    dbal:
+        driver:     pdo_sqlite
+        path:       %kernel.cache_dir%/test.db
+        charset:    UTF8
+
+# Monolog Configuration
+monolog:
+    handlers:
+        main:
+            type:  stream
+            path:  %kernel.logs_dir%/%kernel.environment%.log
+            level: warning
+
+# SwiftMailer Configuration
+swiftmailer:
+    disable_delivery: true
+
+# LiipFuntionalTest Configuration
+liip_functional_test:
+    cache_sqlite_db: true
+    query_count:
+        max_query_count: 50

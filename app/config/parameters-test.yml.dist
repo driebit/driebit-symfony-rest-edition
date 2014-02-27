@@ -1,0 +1,15 @@
+parameters:
+    database_name:     test
+    database_user:     test
+    database_password: test
+
+    mailer_transport:  smtp
+    mailer_host:       localhost
+    mailer_user:       ~
+    mailer_password:   ~
+
+    locale:            en
+    secret:            ThisTokenIsNotSoSecretChangeIt
+
+    access_token_lifetime:  1
+    refresh_token_lifetime: 2
